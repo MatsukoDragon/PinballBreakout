@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class WallOut : MonoBehaviour
 {
-    int ball = 1;
+    int _ball = 1;
     private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag=="ball")
         {
             Destroy(other.gameObject);
-            ball = 0;
+            _ball = 0;
         }
         
     }
@@ -25,7 +25,7 @@ public class WallOut : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(ball==0)
+        if(_ball==0)
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {

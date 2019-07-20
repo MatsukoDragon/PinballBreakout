@@ -26,7 +26,7 @@ public class Rflipper : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKeyUp(KeyCode.RightArrow))         //離されたら実行
         {

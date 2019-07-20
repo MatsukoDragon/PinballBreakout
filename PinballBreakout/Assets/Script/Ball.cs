@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-
-    //Vector3 XmaxSpeed (40.0f, 0f, 0f);
-
     private Rigidbody rb;
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag=="stage"&&other.gameObject.tag=="Block")
+        {
+            //ここに当たったら反対方向に跳ね返る処理(x?とz?軸？)
+
+        }
+    }
+    
     // Start is called before the first frame update
     void Start()
     {

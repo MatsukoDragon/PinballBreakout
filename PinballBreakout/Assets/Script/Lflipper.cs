@@ -26,7 +26,7 @@ public class Lflipper : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
         if (Input.GetKeyUp(KeyCode.LeftArrow))      //離されたら実行
